@@ -68,6 +68,6 @@ jobs:
           git commit -m "Automatic Deploy"
 
           # Set remote with token
-          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git remote add origin https://x-access-token:${{ secrets.GH_TOKEN_M }}@github.com/${{ github.repository }}
           git push --force origin gh-pages
       shell: bash
