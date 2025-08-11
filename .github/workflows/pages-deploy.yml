@@ -62,7 +62,7 @@ jobs:
         git checkout -b gh-pages
 
         # Copy build output from previous step
-        cp -r ../build/* .
+        cp -r ../dist/* .
 
         # Commit and push to gh-pages
         git add --all
