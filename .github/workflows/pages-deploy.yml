@@ -50,25 +50,24 @@ jobs:
       
     - name: Deploy to GitHub Pages
       run: |
-        git config user.name github-actions
-        git config user.email github-actions@github.com
+          git config user.name github-actions
+          git config user.email github-actions@github.com
 
-        # Create a temporary directory for gh-pages
-        mkdir gh-pages-temp
-        cd gh-pages-temp
+          mkdir gh-pages-temp
+          cd gh-pages-temp
 
-        # Initialize a new Git repo and check out gh-pages branch
-        git init
-        git checkout -b gh-pages
+          git init
+          git checkout -b gh-pages
 
-        git config user.name github-actions
-        git config user.email github-actions@github.com
+          git config user.name github-actions
+          git config user.email github-actions@github.com
 
-        # Copy build output from previous step
-        cp -r ../dist/* .
+          cp -r ../dist/* .
 
-        # Commit and push to gh-pages
-        git add --all
-        git commit -m "Automatic Deploy"
-        git push --force "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" gh-pages
+          git add --all
+          git commit -m "Automatic Deploy"
+
+          # Set remote with token
+          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git push --force origin gh-pages
       shell: bash
