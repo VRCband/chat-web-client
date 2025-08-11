@@ -42,7 +42,11 @@ jobs:
       run: pnpm install
       
     - name: Build
-      run: pnpm build
+      run: |
+         pnpm build
+         echo "✅ Build complete"
+         ls -la
+
       
     - name: Deploy to GitHub Pages
       run: |
