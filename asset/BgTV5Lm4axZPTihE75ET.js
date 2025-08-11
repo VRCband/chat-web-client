@@ -1,0 +1,1 @@
+import{F as o}from"./B0eNyNCxTGsuyGPmjuwf.js";import{R as n}from"./DeTGZYeDNQQzD2Hg2g8t.js";const a=()=>{const t=n.useContext(o);if(t==null)throw new Error("Floating components must be wrapped in <Floating />");return t};export{a as u};

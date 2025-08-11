@@ -1,0 +1,1 @@
+import{j as e}from"./DeTGZYeDNQQzD2Hg2g8t.js";import{M as o}from"./BeHhE5cu_Zs49LScyuSd.js";function n({error:i,...r}){return e.jsx(o,{...r,actions:[{onClick:()=>!0,confirmation:!0,children:e.jsx("span",{children:"Dismiss"}),palette:"primary",disabled:!(r.recoverable??!0)}],nonDismissable:!(r.recoverable??!0),children:i})}export{n as E};
