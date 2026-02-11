@@ -1,0 +1,4 @@
+import{q as p,R as y,f as s,j as c}from"./YuA7MKX-N8BBDZOAxa77.js";import"./BUjYG6qMQjp0KnokeClt.js";import"./b9QDabEUvKe6AI27JKho.js";import{a as i}from"./BehbJKW-Ic5ZiA7tfWXx.js";import{C as E}from"./DahxjqD2uAZBh4yS5gyt.js";const x=p.div`
+	flex: 1;
+	display: flex;
+`;function b({id:u,value:n,onChange:f,onKeyDown:a,placeholder:d,disabled:m,maxLength:l}){const e=y.useRef(null);s.useEffect(()=>{i||e.current&&e.current.focus()},[n]);const o=()=>{var t;return["TEXTAREA","INPUT","DIV"].includes(((t=document.activeElement)==null?void 0:t.nodeName)??"")};return s.useEffect(()=>{if(!e.current||i)return;o()||e.current.focus();function t(r){r.ctrlKey&&r.key!=="v"||r.altKey||r.metaKey||r.key.length===1&&e&&!o()&&e.current.focus()}return document.body.addEventListener("keydown",t),()=>document.body.removeEventListener("keydown",t)},[e,n]),c.jsx(x,{children:c.jsx(E,{id:u,value:n,onChange:f,onKeyDown:a,placeholder:d,disabled:m,maxLength:l})})}export{b as M};

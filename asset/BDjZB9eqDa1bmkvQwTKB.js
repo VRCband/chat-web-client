@@ -1,0 +1,1 @@
+import{j as o,N as e}from"./YuA7MKX-N8BBDZOAxa77.js";import{u as p}from"./CyJ5WJXEKPq0b3c1ZbHJ.js";import{L as a}from"./DMsSGWq2yKA_465CawY1.js";function x({component:n,requireUnauthenticated:t}){const r=p();if(!t&&!r.token)return o.jsx(e,{to:"/login",replace:!0});if(t&&r.token)return o.jsx(e,{to:"/app",replace:!0});const s=n;return o.jsx(a,{children:o.jsx(s,{})})}export{x as A};
